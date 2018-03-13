@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        var Add = function (a,b) {
+
+            var res = (a + b);
+            document.write("a + b = "+res+"<br/>");
+        };
+        
+        var Sub= function (a,b) {
+
+            var res = (a - b);
+            document.write("a - b = " + res + "<br/>");
+        };
+
+        var Mul = function (a, b) {
+
+            var res = (a * b);
+            document.write("a * b = " + res + "<br/>");
+        };
+
+        var Div = function (a, b) {
+
+            if(b!=0){
+            var res = (a / b);
+            document.write("a / b = " + res + "<br/>");
+            } else {
+                document.write("Попытка деления на 0.");
+            }
+        };
+
+        Add(3, 5);
+        Sub(7, 4);
+        Mul(8, 2);
+        Div(4, 2);
+        Div(7, 0);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

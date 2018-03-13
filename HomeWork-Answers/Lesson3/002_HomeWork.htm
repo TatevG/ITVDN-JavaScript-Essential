@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <script type="text/javascript">
+        
+        var arr = Array(3, 5, -3, 6, 143, 7, 12, -87, 54, 32, -78, 5, 43);
+        var max = arr[0];
+
+        // Поиска найбольшего значения массива
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            };
+        }
+        document.write("Найболшее значение массива = " + max);
+        document.write("<hr\>");
+
+        // Поиска найменьшего значения массива
+        var min = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        };
+
+        document.write("Найменьшее значение массива = " + min);
+        document.write("<hr\>");
+
+        //Сумма всех элеменов масива
+        var summ = 0;
+        for (var i = 0; i < arr.length; i++) {
+            summ += arr[i];
+        }
+
+        document.write("Сумма всех элементов массива = " + summ);
+        document.write("<hr\>");
+
+        //Среднее арифметическое
+        var summ = 0;
+        for (var i = 0; i < arr.length; i++) {
+            summ += arr[i];
+        }
+        summ = summ / arr.length;
+
+        document.write("Среднее арифметическое массива = " + summ);
+        document.write("<hr>");
+
+
+        //Все не четные значения
+        var summ = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+
+                document.write("Элемент по индексу " + i + " со значением " + arr[i] + " не четный");
+                document.write("<br\>");
+            }
+        }
+        document.write("<hr>");
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

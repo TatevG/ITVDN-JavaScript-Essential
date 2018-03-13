@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        //Прямоугольник
+        for (var i = 0; i < 8; i++) {
+            document.write("<br/>");
+            for (var j = 0; j < 8; j++) {
+                document.write("&nbsp * &nbsp");
+            }
+        }
+        document.write("<hr/>");
+        document.write("<br/><br/>");
+
+        //Прямоугольный треугольник 
+        for (var i = 0; i < 8; i++) {
+            document.write("<br/>");
+            for (var j = 0; j < i; j++) {
+                document.write("&nbsp * &nbsp");
+            }
+        }
+        document.write("<hr/>");
+        document.write("<br/><br/>");
+
+        //Равносторонний треугольник
+        var n = 7;
+        var l = 0;
+
+        for (var i = 0; i < n; i++) {
+
+
+            for (var k = 0; k < (2 * n / 2 - i) ; k++) {
+                document.write(" &nbsp ");
+            }
+
+            for (var j = 0; j < l; j++) {
+                document.write("&nbsp * ");
+
+            }
+            l++;
+
+            document.write("<br/>");
+
+        }
+        document.write("<hr/>");
+
+        //Ромб.
+
+        var nn = 5;
+        var ll = 0;
+
+        for (var ii = 0; ii < nn; ii++) {
+
+
+            for (var kk = 0; kk < (2 * nn / 2 - ii) ; kk++) {
+                document.write(" &nbsp&nbsp");
+            }
+
+            for (var jj = 0; jj < ll; jj++) {
+                document.write(" &nbsp * ");
+
+            }
+            ll++;
+
+            document.write("<br/>");
+        }
+
+        for (var ii = 0; ii < nn; ii++) {
+
+
+            for (var kk = 0; kk < (2 / nn * 2 + ii) ; kk++) {
+                document.write(" &nbsp");
+            }
+
+            for (var jj = 0; jj < ll; jj++) {
+                document.write("&nbsp * ");
+
+            }
+            ll--;
+
+            document.write("<br/>");
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

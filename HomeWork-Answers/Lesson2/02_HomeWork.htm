@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+        var a = 8;
+        var a1 = a;
+        var b = 15;
+        var res = 0;
+
+        while (a < b) {
+
+            a++;
+
+            if (a < b) {
+                res += a;
+            }
+        }
+
+        document.write("Сумма всех чисел между " + a1 + " и " + b + " = " + res + "<br/><br/>");
+        document.write("<hr/>");
+
+        res = 0;
+        a = a1;
+
+        while (a < b) {
+
+            a++;
+
+            if (a % 2 != 0 && a < b) {
+                document.write("Не четное число: " + a + "<br/>");
+            }
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

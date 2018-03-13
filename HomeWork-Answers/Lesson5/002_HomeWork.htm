@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        var documents = {
+
+            header: "Name",
+            body: "Text",
+            footer: "Served",
+
+            doc1: { header: "Name", body: "Text", footr: "Served" },
+
+            edit: function () {
+                var a = prompt("Введите заголовок", "");
+                var b = prompt("Введите текст", "");
+                var c = prompt("Введите подпись", "");
+                documents.doc1.name = a;
+                documents.doc1.body = b;
+                documents.doc1.footer = c;
+            },
+
+            open: function () {
+
+                document.writeln(documents.doc1.name);
+                document.writeln(documents.doc1.body);
+                document.writeln(documents.doc1.footer);
+            }
+        };
+
+        documents.edit();
+        documents.open();
+
+
+    </script>
+
+
+</body>
+</html>
